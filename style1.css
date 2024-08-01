@@ -1,0 +1,333 @@
+.Top {
+  margin: 30px auto;
+  width: 100vw;
+  max-width: 1000px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxes {
+  width: 25%;
+  margin: 50px 30px;
+  background-color: darkgrey;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
+
+.blue {
+  background-color: rgba(56, 207, 248, 0.5);
+  font-size: 20px;
+}
+
+.rotate {
+  transform: rotate(0);
+  transition: all 0.5s ease;
+}
+
+.rotate:active {
+  transform: rotate(360deg);
+  border: 2px solid black;
+  background-color: lightcoral;
+  color: black;
+}
+
+.rotateX {
+  transform: rotate(0);
+  transition: all 0.5s ease;
+}
+
+.rotateX:active {
+  transform: rotateX(360deg);
+  border: 2px solid black;
+  background-color: lightgreen;
+  color: black;
+}
+
+.rotateY {
+  transform: rotate(0);
+  transition: all 0.5s ease;
+}
+.rotateY:active {
+  transform: rotateY(360deg);
+  border: 2px solid black;
+  background-color: lightpink;
+  color: black;
+}
+
+.scale {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+.scale:active {
+  transform: scale(1.2) rotate(30deg);
+  border: 2px solid black;
+  background-color: plum;
+  color: black;
+}
+
+.scaleX {
+  transform: scaleX(1);
+  transition: transform 0.5s ease;
+}
+.scaleX:active {
+  transform: scaleX(1.2) rotateX(45deg);
+  border: 2px solid black;
+  background-color: lightseagreen;
+  color: black;
+}
+
+.scaleY {
+  transform: scaleY(1);
+  transition: transform 0.5s ease;
+}
+.scaleY:active {
+  transform: scaleY(1.5) rotateY(45deg);
+  border: 2px solid black;
+  background-color: lightsalmon;
+  color: black;
+}
+
+.translate {
+  transform: translate(1, 1);
+  transition: transform 0.5s ease;
+}
+
+.translate:active {
+  transform: translate(1.5em, 1.5em);
+  border: 2px solid black;
+  background-color: palegoldenrod;
+  color: black;
+}
+
+.translateX {
+  transform: translateX(1);
+  transition: transform 0.5s ease;
+}
+
+.translateX:active {
+  transform: translateX(1.5em);
+  border: 2px solid black;
+  background-color: plum;
+  color: black;
+}
+
+.translateY {
+  transform: translateY(1);
+  transition: transform 0.5s ease;
+}
+
+.translateY:active {
+  transform: translateY(1.5em);
+  border: 2px solid black;
+  background-color: paleturquoise;
+  color: black;
+}
+
+.skew {
+  transform: skew(1, 1);
+  transition: transform 0.5s ease;
+}
+
+.skew:active {
+  transform: skew(20deg, 20deg);
+  border: 2px solid black;
+  background-color: yellow;
+  color: black;
+}
+
+.skewX {
+  transform: skewX(1);
+  transition: transform 0.5s ease;
+}
+
+.skewX:active {
+  transform: skewX(30deg);
+  border: 2px solid black;
+  background-color: palevioletred;
+  color: black;
+}
+
+.skewY {
+  transform: skewY(1);
+  transition: transform 0.5s ease;
+}
+
+.skewY:active {
+  transform: skewY(30deg);
+  border: 2px solid black;
+  background-color: lightcyan;
+  color: black;
+}
+
+
+/* for mobile and small devices */
+@media only screen and (max-width: 575px) {
+  .Top {
+    margin: 30px auto;
+    width: 100vw;
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .boxes {
+    width: 60%;
+    margin: 50px 30px;
+    background-color: darkgrey;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+  }
+
+  .blue {
+    background-color: rgba(56, 207, 248, 0.5);
+    font-size: 25px;
+  }
+
+  .rotate {
+    transform: rotate(0);
+    transition: all 0.5s ease;
+  }
+
+  .rotate:active {
+    transform: rotate(360deg);
+    border: 2px solid black;
+    background-color: lightcoral;
+    color: black;
+  }
+
+  .rotateX {
+    transform: rotate(0);
+    transition: all 0.5s ease;
+  }
+
+  .rotateX:active {
+    transform: rotateX(360deg);
+    border: 2px solid black;
+    background-color: lightgreen;
+    color: black;
+  }
+
+  .rotateY {
+    transform: rotate(0);
+    transition: all 0.5s ease;
+  }
+  .rotateY:active {
+    transform: rotateY(360deg);
+    border: 2px solid black;
+    background-color: lightpink;
+    color: black;
+  }
+
+  .scale {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+  }
+  .scale:active {
+    transform: scale(1.2) rotate(20deg);
+    border: 2px solid black;
+    background-color: plum;
+    color: black;
+  }
+
+  .scaleX {
+    transform: scaleX(1);
+    transition: transform 0.5s ease;
+  }
+  .scaleX:active {
+    transform: scaleX(1.2) rotateX(45deg);
+    border: 2px solid black;
+    background-color: lightseagreen;
+    color: black;
+  }
+
+  .scaleY {
+    transform: scaleY(1);
+    transition: transform 0.5s ease;
+  }
+  .scaleY:active {
+    transform: scaleY(1.5) rotateY(45deg);
+    border: 2px solid black;
+    background-color: lightsalmon;
+    color: black;
+  }
+
+  .translate {
+    transform: translate(1, 1);
+    transition: transform 0.5s ease;
+  }
+
+  .translate:active {
+    transform: translate(1.5em, 1.5em);
+    border: 2px solid black;
+    background-color: palegoldenrod;
+    color: black;
+  }
+
+  .translateX {
+    transform: translateX(1);
+    transition: transform 0.5s ease;
+  }
+
+  .translateX:active {
+    transform: translateX(1.5em);
+    border: 2px solid black;
+    background-color: plum;
+    color: black;
+  }
+
+  .translateY {
+    transform: translateY(1);
+    transition: transform 0.5s ease;
+  }
+
+  .translateY:active {
+    transform: translateY(1.5em);
+    border: 2px solid black;
+    background-color: paleturquoise;
+    color: black;
+  }
+
+  .skew {
+    transform: skew(1, 1);
+    transition: transform 0.5s ease;
+  }
+
+  .skew:active {
+    transform: skew(20deg, 20deg);
+    border: 2px solid black;
+    background-color: yellow;
+    color: black;
+  }
+
+  .skewX {
+    transform: skewX(1);
+    transition: transform 0.5s ease;
+  }
+
+  .skewX:active {
+    transform: skewX(30deg);
+    border: 2px solid black;
+    background-color: palevioletred;
+    color: black;
+  }
+
+  .skewY {
+    transform: skewY(1);
+    transition: transform 0.5s ease;
+  }
+
+  .skewY:active {
+    transform: skewY(20deg);
+    border: 2px solid black;
+    background-color: lightcyan;
+    color: black;
+  }
+}

@@ -1,0 +1,226 @@
+body {
+  background-color: lavender;
+  padding: 0px;
+  margin: 0px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgrey;
+  padding: 0px 90px 0px 20px;
+  height: 120px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.link {
+  display: flex;
+  column-gap: 20px;
+}
+a {
+  text-decoration: none;
+  background-color: lightpink;
+  border-color: 2px solid palevioletred;
+  font-size: 20px;
+  padding: 5px;
+  transition: all 0.2s ease-out;
+}
+a:active {
+  background-color: lightpink;
+  color: blueviolet;
+  padding: 7px;
+  border: 2px solid palevioletred;
+}
+h1 {
+  background-color: lightblue;
+  font-size: 50px;
+  padding: 10px;
+  border: 2px solid gray;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+.div1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.box1 {
+  background-color: aquamarine;
+  width: 20%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* All the transition properties define seperately */
+  transition: all 2s ease-in 1s;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in; /* start slowly and complete fast*/
+  transition-delay: 1s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box1:active {
+  width: 25%;
+  height: 55%;
+  box-shadow: 10px 10px 10px rgb(59, 57, 57);
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.box2 {
+  background-color: lightcoral;
+  width: 20%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /* transition: all 2s ease-in-out 1s;start and complete with same speed */
+  transition: width 2s ease-in-out, height 2s ease-in-out 1s,
+    box-shadow 2s ease-in-out 2s, border-radius ease-in-out 2.5s,
+    font-size ease-in-out 2.5s;
+}
+.box2:active {
+  width: 25%;
+  height: 55%;
+  box-shadow: 10px 10px 10px rgb(59, 57, 57);
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.box3 {
+  background-color: yellowgreen;
+  width: 20%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 2s ease-out 1s; /* start fast and complete slowly*/
+}
+.box3:active {
+  width: 25%;
+  height: 55%;
+  box-shadow: 10px 10px 10px rgb(59, 57, 57);
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+
+/* for mobiles and small devices */
+@media only screen and (max-width: 575px) {
+  body {
+    background-color: lavender;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    padding: 0px 20px 0px 25px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 200px;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 49px;
+  }
+  a {
+    text-decoration: none;
+    background-color: lightpink;
+    border-color: 2px solid palevioletred;
+    font-size: 20px;
+    padding: 5px;
+    transition: all 0.3s ease-out;
+  }
+  a:active {
+    background-color: lightpink;
+    color: blueviolet;
+    padding: 7px;
+    border: 2px solid palevioletred;
+  }
+  h1 {
+    background-color: lightblue;
+    font-size: 45px;
+    padding: 10px;
+    border: 2px solid gray;
+    align-content: stretch;
+    font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  }
+  .div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-flow: row wrap;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    row-gap: 50px;
+  }
+
+  .box1 {
+    background-color: aquamarine;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease-in 1s;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in; /* start slowly and complete fast*/
+    transition-delay: 1s;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .box1:active {
+    width: 80%;
+    height: 35%;
+    box-shadow: 10px 10px 10px rgb(59, 57, 57);
+    font-size: 30px;
+    border-radius: 10px;
+  }
+
+  .box2 {
+    background-color: lightcoral;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* transition: all 2s ease-in-out 1s;start and complete with same speed */
+    transition: width 2s ease-in-out, height 2s ease-in-out 1s,
+      box-shadow 2s ease-in-out 2s, border-radius ease-in-out 2.5s,
+      font-size ease-in-out 2.5s;
+  }
+  .box2:active {
+    width: 80%;
+    height: 35%;
+    box-shadow: 10px 10px 10px rgb(59, 57, 57);
+    font-size: 30px;
+    border-radius: 10px;
+  }
+
+  .box3 {
+    background-color: yellowgreen;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 2s ease-out 1s; /* start fast and complete slowly*/
+  }
+  .box3:active {
+    width: 80%;
+    height: 35%;
+    box-shadow: 10px 10px 10px rgb(59, 57, 57);
+    font-size: 30px;
+    border-radius: 10px;
+  }
+}
