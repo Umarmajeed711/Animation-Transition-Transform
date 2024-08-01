@@ -107,6 +107,10 @@ h1 {
   font-size: 25px;
   border-radius: 10px;
 }
+.guide{
+  display: flex;
+  justify-content: center;
+}
 
 
 /* for mobiles and small devices */
@@ -159,7 +163,7 @@ h1 {
     height: 100vh;
     flex-flow: row wrap;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     row-gap: 50px;
   }
 
@@ -222,5 +226,10 @@ h1 {
     box-shadow: 10px 10px 10px rgb(59, 57, 57);
     font-size: 30px;
     border-radius: 10px;
+  }
+  .guide{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
   }
 }

@@ -179,6 +179,7 @@
   .boxes {
     width: 60%;
     margin: 50px 30px;
+    margin-bottom: 20px;
     background-color: darkgrey;
     cursor: pointer;
     color: #fff;
