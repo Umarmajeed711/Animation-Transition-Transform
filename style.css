@@ -1,18 +1,22 @@
 body {
-  background-color: lavender;
+  background-image: url(space.jpg);
   padding: 0px;
   margin: 0px;
+}
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: darkgrey;
   padding: 0px 90px 0px 20px;
   height: 120px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  background-color: #0a2a34;
+  border-bottom: 2px solid #9fe6f5;
 }
 .link {
   display: flex;
@@ -26,7 +30,8 @@ a {
   padding: 5px;
   transition: all 0.2s ease-out;
 }
-a:active {
+a:active,
+a:hover {
   background-color: lightpink;
   color: blueviolet;
   padding: 7px;
@@ -61,10 +66,11 @@ h1 {
   transition-delay: 1s;
   font-family: Arial, Helvetica, sans-serif;
 }
-.box1:active {
+.box1:active,
+.box1:hover {
   width: 25%;
   height: 55%;
-  box-shadow: 10px 10px 10px rgb(59, 57, 57);
+  box-shadow: 10px 10px 10px rgb(133, 177, 162);
   font-size: 25px;
   border-radius: 10px;
 }
@@ -82,10 +88,11 @@ h1 {
     box-shadow 2s ease-in-out 2s, border-radius ease-in-out 2.5s,
     font-size ease-in-out 2.5s;
 }
-.box2:active {
+.box2:active,
+.box2:hover {
   width: 25%;
   height: 55%;
-  box-shadow: 10px 10px 10px rgb(59, 57, 57);
+  box-shadow: 10px 10px 10px rgb(228, 124, 176);
   font-size: 25px;
   border-radius: 10px;
 }
@@ -100,18 +107,22 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   transition: all 2s ease-out 1s; /* start fast and complete slowly*/
 }
-.box3:active {
+.box3:active,
+.box3:hover {
   width: 25%;
   height: 55%;
-  box-shadow: 10px 10px 10px rgb(59, 57, 57);
+  box-shadow: 10px 10px 10px rgb(121, 194, 119);
   font-size: 25px;
   border-radius: 10px;
 }
-.guide{
+.guide {
   display: flex;
   justify-content: center;
 }
-
+.guide1 {
+  display: flex;
+  justify-content: center;
+}
 
 /* for mobiles and small devices */
 @media only screen and (max-width: 575px) {
@@ -127,6 +138,9 @@ h1 {
     flex-wrap: wrap;
     flex-direction: column;
     height: 200px;
+    background-color: #0a2a34;
+    border-bottom: 2px solid #9fe6f5;
+    z-index: 5;
   }
   .link {
     display: flex;
@@ -142,7 +156,8 @@ h1 {
     padding: 5px;
     transition: all 0.3s ease-out;
   }
-  a:active {
+  a:active,
+  a:hover {
     background-color: lightpink;
     color: blueviolet;
     padding: 7px;
@@ -181,10 +196,11 @@ h1 {
     transition-delay: 1s;
     font-family: Arial, Helvetica, sans-serif;
   }
-  .box1:active {
+  .box1:active,
+  .box1:hover {
     width: 80%;
     height: 35%;
-    box-shadow: 10px 10px 10px rgb(59, 57, 57);
+    box-shadow: 10px 10px 10px rgb(133, 177, 162);
     font-size: 30px;
     border-radius: 10px;
   }
@@ -202,10 +218,11 @@ h1 {
       box-shadow 2s ease-in-out 2s, border-radius ease-in-out 2.5s,
       font-size ease-in-out 2.5s;
   }
-  .box2:active {
+  .box2:active,
+  .box2:hover {
     width: 80%;
     height: 35%;
-    box-shadow: 10px 10px 10px rgb(59, 57, 57);
+    box-shadow: 10px 10px 10px rgb(228, 124, 176);
     font-size: 30px;
     border-radius: 10px;
   }
@@ -220,16 +237,22 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     transition: all 2s ease-out 1s; /* start fast and complete slowly*/
   }
-  .box3:active {
+  .box3:active,
+  .box3:hover {
     width: 80%;
     height: 35%;
-    box-shadow: 10px 10px 10px rgb(59, 57, 57);
+    box-shadow: 10px 10px 10px rgb(121, 194, 119);
     font-size: 30px;
     border-radius: 10px;
   }
-  .guide{
+  .guide {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 60px;
+  }
+
+  .guide1 {
+    display: flex;
+    justify-content: center;
   }
 }

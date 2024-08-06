@@ -1,0 +1,650 @@
+.first {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: -50px;
+  padding: 0px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 33vh;
+}
+.cub1 {
+  width: 10%;
+  height: 11vh;
+  background-color: skyblue;
+  border: 1px solid rgb(0, 225, 255);
+  animation: cub1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes cub1 {
+  0% {
+  }
+  25% {
+    background-color: rgb(247, 131, 151);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+  }
+  50% {
+    background-color: rgb(248, 107, 131);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+  }
+  75% {
+    background-color: rgb(241, 105, 128);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+  }
+  100% {
+    background-color: rgb(245, 108, 131);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+
+    transform: translateX(37vw);
+  }
+}
+
+.circle1 {
+  width: 2.5vw;
+  height: 5vh;
+  border-radius: 50px;
+  background-color: hotpink;
+  animation: circle1 0.3s ease-in-out 6.5s 1 alternate;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+}
+@keyframes circle1 {
+  from {
+  }
+  to {
+    width: 1vw;
+    height: 2vh;
+    transform: translateX(17vw);
+    background-color: rgb(241, 73, 101);
+  }
+}
+
+.cub2 {
+  width: 15%;
+  height: 15vh;
+  text-align: center;
+  background-color: rgb(155 162 161);
+  animation: cub2 2s ease-in-out 6s 1 normal forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  border: 1px solid rgb(115 237 238);
+  font-size: 30px;
+}
+
+@keyframes cub2 {
+  0% {
+  }
+  25% {
+    background-color: rgb(247, 131, 151);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    transform: rotate(360deg);
+    border: 2px solid rgb(241, 73, 101);
+    font-size: 50px;
+  }
+  35% {
+    background-color: rgb(247, 131, 151);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+  }
+  45% {
+    background-color: rgb(247, 131, 151);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+  }
+  55% {
+    background-color: rgb(247, 131, 151);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    font-size: 50px;
+  }
+
+  75% {
+    background-color: rgb(155 162 161);
+    border: 2px solid rgb(115 237 238);
+  }
+  100% {
+    background-color: rgb(155 162 161);
+    box-shadow: px px 15px rgb(155 162 161);
+    transform: rotate(360deg);
+    border: 2px solid rgb(115 237 238);
+    font-size: 25px;
+  }
+}
+
+.circle2 {
+  width: 2.5vw;
+  height: 5vh;
+  border-radius: 50px;
+  background-color: hotpink;
+  animation: circle2 0.3s ease-in-out 6.5s 1 normal;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+}
+@keyframes circle2 {
+  from {
+  }
+  to {
+    width: 1vw;
+    height: 2vh;
+    transform: translateX(-17vw);
+    background-color: rgb(241, 73, 101);
+  }
+}
+
+.cub3 {
+  width: 10%;
+  height: 11vh;
+  background-color: skyblue;
+  border: 1px solid rgb(0, 225, 255);
+  animation: cub3;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3.5s;
+  animation-iteration-count: 1;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+}
+@keyframes cub3 {
+  0% {
+  }
+  25% {
+    background-color: rgb(247, 131, 151);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+  }
+  50% {
+    background-color: rgb(248, 107, 131);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+  }
+  75% {
+    background-color: rgb(241, 105, 128);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+  }
+  100% {
+    background-color: rgb(245, 108, 131);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+    transform: translateX(-37vw);
+  }
+}
+.main2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  align-items: center;
+}
+
+.cub4 {
+  width: 15%;
+  height: 8vh;
+  background-color: pink;
+  animation: cub4 3s ease-in-out 0.5s 1 alternate;
+}
+
+@keyframes cub4 {
+  0% {
+  }
+  25% {
+    background-color: rgb(247, 131, 151);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    transform: skewY(10deg);
+  }
+  50% {
+    background-color: rgb(248, 107, 131);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+  }
+  75% {
+    background-color: rgb(241, 105, 128);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+  }
+  100% {
+    background-color: rgb(245, 108, 131);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    transform: translateX(37vw);
+  }
+}
+
+.cub6 {
+  width: 15%;
+  height: 8vh;
+  background-color: pink;
+  animation: cub6 3s ease-in-out 0.5s 1 alternate;
+}
+
+@keyframes cub6 {
+  0% {
+  }
+  25% {
+    background-color: rgb(247, 131, 151);
+    box-shadow: -5px 0px 5px rgb(238, 98, 122);
+    transform: skewY(-10deg);
+  }
+  50% {
+    background-color: rgb(248, 107, 131);
+    box-shadow: -5px 0px 5px rgb(238, 98, 122);
+  }
+  75% {
+    background-color: rgb(241, 105, 128);
+    box-shadow: -5px 0px 5px rgb(238, 98, 122);
+  }
+  100% {
+    background-color: rgb(245, 108, 131);
+    box-shadow: -5px 0px 5px rgb(238, 98, 122);
+    transform: translateX(-37vw);
+  }
+}
+
+.cub5 {
+  width: 10%;
+  height: 11vh;
+  background-color: skyblue;
+  border: 1px solid rgb(0, 225, 255);
+  animation: cub5 2s ease-in-out 3.5s 1 alternate;
+  z-index: 2;
+}
+
+@keyframes cub5 {
+  0% {
+  }
+  25% {
+    background-color: rgb(247, 131, 151);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+  }
+  50% {
+    background-color: rgb(248, 107, 131);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+  }
+  75% {
+    background-color: rgb(241, 105, 128);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+  }
+  100% {
+    background-color: rgb(245, 108, 131);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+    transform: translateY(37vh);
+  }
+}
+
+.cub7 {
+  width: 10%;
+  height: 11vh;
+  background-color: skyblue;
+  border: 1px solid rgb(0, 225, 255);
+  animation: cub7 2s ease-in-out 3.5s 1 alternate;
+  z-index: 2;
+}
+
+@keyframes cub7 {
+  0% {
+  }
+  25% {
+    background-color: rgb(247, 131, 151);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+  }
+  50% {
+    background-color: rgb(248, 107, 131);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+  }
+  75% {
+    background-color: rgb(241, 105, 128);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+  }
+  100% {
+    background-color: rgb(245, 108, 131);
+    box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    border: 1px solid rgb(241, 73, 101);
+    transform: translateY(-37vh);
+  }
+}
+
+/* For Mobiles & small devices*/
+
+@media only screen and (max-width: 575px) {
+  .first {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-top: -50px;
+    padding: 0px;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 33vh;
+  }
+  .cub1 {
+    width: 10%;
+    height: 10vh;
+    background-color: skyblue;
+    border: 1px solid rgb(0, 225, 255);
+    animation: cub1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  }
+
+  @keyframes cub1 {
+    0% {
+    }
+    25% {
+      background-color: rgb(247, 131, 151);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    }
+    50% {
+      background-color: rgb(248, 107, 131);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+    }
+    75% {
+      background-color: rgb(241, 105, 128);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+    }
+    100% {
+      background-color: rgb(245, 108, 131);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+
+      transform: translateX(37vw);
+    }
+  }
+
+  .circle1 {
+    width: 2.5vw;
+    height: 5vh;
+    border-radius: 50px;
+    background-color: hotpink;
+    animation: circle1 0.3s ease-in-out 6.5s 1 alternate;
+    animation: name duration timing-function delay iteration-count direction
+      fill-mode;
+  }
+  @keyframes circle1 {
+    from {
+    }
+    to {
+      width: 1vw;
+      height: 2vh;
+      transform: translateX(17vw);
+      background-color: rgb(241, 73, 101);
+    }
+  }
+
+  .cub2 {
+    width: 15%;
+    height: 13vh;
+    text-align: center;
+    background-color: rgb(155 162 161);
+    animation: cub2 2s ease-in-out 6s 1 normal forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    border: 1px solid rgb(115 237 238);
+    font-size: 30px;
+  }
+
+  @keyframes cub2 {
+    0% {
+    }
+    25% {
+      background-color: rgb(247, 131, 151);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      transform: rotate(360deg);
+      border: 2px solid rgb(241, 73, 101);
+      font-size: 40px;
+    }
+    35% {
+      background-color: rgb(247, 131, 151);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    }
+    45% {
+      background-color: rgb(247, 131, 151);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    }
+    55% {
+      background-color: rgb(247, 131, 151);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    }
+
+    75% {
+      background-color: rgb(155 162 161);
+      border: 2px solid rgb(115 237 238);
+    }
+    100% {
+      background-color: rgb(155 162 161);
+      box-shadow: 5px 5px 5px rgb(155 162 161);
+      transform: rotate(360deg);
+      border: 2px solid rgb(115 237 238);
+      font-size: 40px;
+    }
+  }
+
+  .circle2 {
+    width: 2.5vw;
+    height: 5vh;
+    border-radius: 50px;
+    background-color: hotpink;
+    animation: circle2 0.3s ease-in-out 6.5s 1 normal;
+    animation: name duration timing-function delay iteration-count direction
+      fill-mode;
+  }
+  @keyframes circle2 {
+    from {
+    }
+    to {
+      width: 1vw;
+      height: 2vh;
+      transform: translateX(-17vw);
+      background-color: rgb(241, 73, 101);
+    }
+  }
+
+  .cub3 {
+    width: 10%;
+    height: 10vh;
+    background-color: skyblue;
+    border: 1px solid rgb(0, 225, 255);
+    animation: cub3;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3.5s;
+    animation-iteration-count: 1;
+    animation: name duration timing-function delay iteration-count direction
+      fill-mode;
+  }
+  @keyframes cub3 {
+    0% {
+    }
+    25% {
+      background-color: rgb(247, 131, 151);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+    }
+    50% {
+      background-color: rgb(248, 107, 131);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+    }
+    75% {
+      background-color: rgb(241, 105, 128);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+    }
+    100% {
+      background-color: rgb(245, 108, 131);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+      transform: translateX(-37vw);
+    }
+  }
+  .main2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .cub4 {
+    width: 15%;
+    height: 7vh;
+    background-color: pink;
+    animation: cub4 3s ease-in-out 0.5s 1 alternate;
+  }
+
+  @keyframes cub4 {
+    0% {
+    }
+    25% {
+      background-color: rgb(247, 131, 151);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      transform: skewY(10deg);
+    }
+    50% {
+      background-color: rgb(248, 107, 131);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    }
+    75% {
+      background-color: rgb(241, 105, 128);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+    }
+    100% {
+      background-color: rgb(245, 108, 131);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      transform: translateX(37vw);
+    }
+  }
+
+  .cub6 {
+    width: 15%;
+    height: 7vh;
+    background-color: pink;
+    animation: cub6 3s ease-in-out 0.5s 1 alternate;
+  }
+
+  @keyframes cub6 {
+    0% {
+    }
+    25% {
+      background-color: rgb(247, 131, 151);
+      box-shadow: -5px 0px 5px rgb(238, 98, 122);
+      transform: skewY(-10deg);
+    }
+    50% {
+      background-color: rgb(248, 107, 131);
+      box-shadow: -5px 0px 5px rgb(238, 98, 122);
+    }
+    75% {
+      background-color: rgb(241, 105, 128);
+      box-shadow: -5px 0px 5px rgb(238, 98, 122);
+    }
+    100% {
+      background-color: rgb(245, 108, 131);
+      box-shadow: -5px 0px 5px rgb(238, 98, 122);
+      transform: translateX(-37vw);
+    }
+  }
+
+  .cub5 {
+    width: 10%;
+    height: 10vh;
+    background-color: skyblue;
+    border: 1px solid rgb(0, 225, 255);
+    animation: cub5 2s ease-in-out 3.5s 1 alternate;
+    z-index: 2;
+  }
+
+  @keyframes cub5 {
+    0% {
+    }
+    25% {
+      background-color: rgb(247, 131, 151);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+    }
+    50% {
+      background-color: rgb(248, 107, 131);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+    }
+    75% {
+      background-color: rgb(241, 105, 128);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+    }
+    100% {
+      background-color: rgb(245, 108, 131);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+      transform: translateY(37vh);
+    }
+  }
+
+  .cub7 {
+    width: 10%;
+    height: 10vh;
+    background-color: skyblue;
+    border: 1px solid rgb(0, 225, 255);
+    animation: cub7 2s ease-in-out 3.5s 1 alternate;
+    z-index: 2;
+  }
+
+  @keyframes cub7 {
+    0% {
+    }
+    25% {
+      background-color: rgb(247, 131, 151);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+    }
+    50% {
+      background-color: rgb(248, 107, 131);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+    }
+    75% {
+      background-color: rgb(241, 105, 128);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+    }
+    100% {
+      background-color: rgb(245, 108, 131);
+      box-shadow: 5px 0px 5px rgb(238, 98, 122);
+      border: 1px solid rgb(241, 73, 101);
+      transform: translateY(-37vh);
+    }
+  }
+}

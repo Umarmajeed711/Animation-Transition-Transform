@@ -28,7 +28,8 @@
   transition: all 0.5s ease;
 }
 
-.rotate:active {
+.rotate:active,
+.rotate:hover {
   transform: rotate(360deg);
   border: 2px solid black;
   background-color: lightcoral;
@@ -40,7 +41,8 @@
   transition: all 0.5s ease;
 }
 
-.rotateX:active {
+.rotateX:active,
+.rotateX:hover {
   transform: rotateX(360deg);
   border: 2px solid black;
   background-color: lightgreen;
@@ -51,7 +53,8 @@
   transform: rotate(0);
   transition: all 0.5s ease;
 }
-.rotateY:active {
+.rotateY:active,
+.rotateY:hover {
   transform: rotateY(360deg);
   border: 2px solid black;
   background-color: lightpink;
@@ -62,7 +65,8 @@
   transform: scale(1);
   transition: transform 0.5s ease;
 }
-.scale:active {
+.scale:active,
+.scale:hover {
   transform: scale(1.2) rotate(30deg);
   border: 2px solid black;
   background-color: plum;
@@ -73,7 +77,8 @@
   transform: scaleX(1);
   transition: transform 0.5s ease;
 }
-.scaleX:active {
+.scaleX:active,
+.scaleX:hover {
   transform: scaleX(1.2) rotateX(45deg);
   border: 2px solid black;
   background-color: lightseagreen;
@@ -84,7 +89,8 @@
   transform: scaleY(1);
   transition: transform 0.5s ease;
 }
-.scaleY:active {
+.scaleY:active,
+.scaleY:hover {
   transform: scaleY(1.5) rotateY(45deg);
   border: 2px solid black;
   background-color: lightsalmon;
@@ -96,7 +102,8 @@
   transition: transform 0.5s ease;
 }
 
-.translate:active {
+.translate:active,
+.translate:hover {
   transform: translate(1.5em, 1.5em);
   border: 2px solid black;
   background-color: palegoldenrod;
@@ -108,7 +115,8 @@
   transition: transform 0.5s ease;
 }
 
-.translateX:active {
+.translateX:active,
+.translateX:hover {
   transform: translateX(1.5em);
   border: 2px solid black;
   background-color: plum;
@@ -120,7 +128,8 @@
   transition: transform 0.5s ease;
 }
 
-.translateY:active {
+.translateY:active,
+.translateY:hover {
   transform: translateY(1.5em);
   border: 2px solid black;
   background-color: paleturquoise;
@@ -132,7 +141,8 @@
   transition: transform 0.5s ease;
 }
 
-.skew:active {
+.skew:active,
+.skew:hover {
   transform: skew(20deg, 20deg);
   border: 2px solid black;
   background-color: yellow;
@@ -144,7 +154,8 @@
   transition: transform 0.5s ease;
 }
 
-.skewX:active {
+.skewX:active,
+.skewX:hover {
   transform: skewX(30deg);
   border: 2px solid black;
   background-color: palevioletred;
@@ -156,13 +167,13 @@
   transition: transform 0.5s ease;
 }
 
-.skewY:active {
+.skewY:active,
+.skewY:hover {
   transform: skewY(30deg);
   border: 2px solid black;
   background-color: lightcyan;
   color: black;
 }
-
 
 /* for mobile and small devices */
 @media only screen and (max-width: 575px) {
